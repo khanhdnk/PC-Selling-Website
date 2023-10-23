@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="author" content="Le Xuan Nhat, Dang Nam Khanh, Duong Quang Thanh">
+    <meta name="keyword" content="enquire">
+    <meta name="description" content="Assignment 1">
+
+	<title>Product Enquiry Form</title>
+
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ubuntu:wght@300;400&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css">
+</head>
+
+<body>
+
+	<header>
+
+		<h1>PC Señor</h1>
+
+		<nav>
+			<input type="checkbox" id="button">
+			<label for="button"><img src="images/nav.png" alt="navbar"></label>
+			<ul class="nav">
+				<li><a href="index.html">Index</a></li>
+				<li><a href="product.html">Products</a></li>
+				<li class="active"><a href="">Enquiry</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="enhancements.html">Enhancements</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main class="enq">
+
+		<h1>PRODUCT ENQUIRY FORM</h1>
+
+		<form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+
+			<label for="first_name">First Name: </label>
+			<input type="text" id="first_name" name="first_name" required maxlength="25" pattern="[A-Za-z]+"
+				placeholder="maximum 25 characters, alphabetical only">
+			<br>
+
+			<label for="last_name">Last Name:</label>
+			<input type="text" id="last_name" name="last_name" required maxlength="25" pattern="[A-Za-z]+"
+				placeholder="maximum 25 characters, alphabetical only">
+			<br>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<br>
+
+			<fieldset>
+				<legend>Address</legend>
+
+				<label for="street_address">Street Address:</label>
+				<input type="text" id="street_address" name="street_address" required maxlength="40"
+					placeholder="maximum 40 characters">
+				<br>
+
+				<label for="suburb_town">Suburb/Town:</label>
+				<input type="text" id="suburb_town" name="suburb_town" required maxlength="20"
+					placeholder="maximum 20 characters">
+				<br>
+
+				<label for="state">State:</label>
+				<select id="state" name="state" required>
+					<option value="">--Please select an option--</option>
+					<option value="VIC">VIC</option>
+					<option value="NSW">NSW</option>
+					<option value="QLD">QLD</option>
+					<option value="NT">NT</option>
+					<option value="WA">WA</option>
+					<option value="SA">SA</option>
+					<option value="TAS">TAS</option>
+					<option value="ACT">ACT</option>
+				</select>
+				<br>
+
+				<label for="postcode">Postcode:</label>
+				<input type="text" id="postcode" name="postcode" required pattern="[0-9]{4}"
+					placeholder="exactly 4 digits">
+				<br>
+			</fieldset>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone" maxlength="10" placeholder="e.g. 0400123456" required>
+			<br>
+
+			<label>Preferred Contact:</label>
+			<label><input type="radio" name="contact" value="email" required>Email</label>
+			<label><input type="radio" name="contact" value="post">Post</label>
+			<label><input type="radio" name="contact" value="phone">Phone</label>
+			<br>
+
+			<label for="product">Product:</label>
+			<select id="product" name="product" required>
+				<option value="">--Please select an option--</option>
+				<option value="Product A">PC</option>
+				<option value="Product B">Accessories</option>
+				<option value="Product C">Others</option>
+			</select>
+			<br>
+
+			<label>Product Features:</label>
+			<label><input type="radio" name="features" value="Feature 1">Warranty</label>
+			<label><input type="radio" name="features" value="Feature 2">Repair</label>
+			<label><input type="radio" name="features" value="Feature 3" checked>Others</label>
+			<br>
+
+			<label for="comment">Comments:</label>
+			<textarea id="comment" name="comment"
+				placeholder="Enter product name or any additional information"></textarea>
+			<br>
+
+			<label>User Agreement:</label>
+			<label><input type="checkbox" name ="agree" value="18+" required>I am at least 18 years old</label>
+			<label><input type="checkbox" name ="agree" value="policy" required>I have read the Warranty and other policies of the store</label>
+			<br>
+
+			<input type="submit" value="Submit">
+		</form>
+	</main>
+
+    <footer>
+        <p>Dang Nam Khanh, Le Xuan Nhat, Duong Quang Thanh</p>
+        <p>Copyright &copy; 2023 Señor Ropa. All rights Reserved</p>
+        <p>Menu icon by <a class="credit" href="https://www.iconfinder.com/icons/1891012/blue_cercle_hamburger_list_mavigation_menu_stack_icon">iconfinder.com</a> and background image by <a class="credit" href="https://www.wallpaperflare.com/pc-build-water-cooling-ram-120mm-fan-wallpaper-ysbod">Wallpaper Flare</a>
+    </footer>
+
+	<a href="#" class="top"></a>
+
+</body>
+
+</html>
